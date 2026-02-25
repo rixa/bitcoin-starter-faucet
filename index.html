@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bitcoin Starter Faucet</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      background: orange;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚰 Bitcoin Starter Faucet</h1>
+  <p>Claim test BTC to activate OP_NET</p>
+
+  <button onclick="claim()">Claim Faucet</button>
+
+  <p id="status"></p>
+
+  <script>
+    function claim() {
+      document.getElementById("status").innerText =
+        "✅ Faucet request submitted! (Demo Mode)";
+    }
+  </script>
+
+</body>
+</html>
